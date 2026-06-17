@@ -5,7 +5,16 @@ interface Props {
   className?: string;
 }
 
-const cats = ['Завтраки', 'Пиццы', 'Роллы', 'Супы', 'Напитки', 'Десерты'];
+const cats = [
+  'Завтраки',
+  'Пиццы',
+  'Роллы',
+  'Лапша/Рис',
+  'Супы',
+  'Напитки',
+  'Десерты',
+  'Еще',
+];
 const activeIndex = 0;
 export const Categories: React.FC<Props> = ({ className }) => {
   return (
@@ -17,7 +26,7 @@ export const Categories: React.FC<Props> = ({ className }) => {
           className={cn(
             'flex items-center font-bold h-11 rounded-2xl px-5',
             activeIndex === index &&
-              'bg-white shadow-md shadow-gray-200 text-primary',
+              'bg-white shadow-md shadow-gray-200  text-[#9fdb27]',
           )}
           key={index}
           href=''
